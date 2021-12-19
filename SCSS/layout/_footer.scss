@@ -1,0 +1,88 @@
+footer {
+    @extend header;
+    @extend .main__paragraphs;
+    flex-direction: column;
+    @include padding(5rem, 0rem, 5rem, 0rem);
+
+    .logo {
+        display: none;
+        width: 21rem;
+    }
+
+    .logo__container {
+        @include display_flex($row);
+        @include list-style($none);
+
+        &:nth-child(3n) {
+            display: none;
+        }
+
+        .nav__menu {
+            height: 3rem;
+            width: 4.4rem;
+            @include nav_color ($orange);
+
+            &:hover {
+                @include nav_color ($grey);
+            }
+        }
+    }
+
+    .third__paragraph {
+        @include padding (0rem, 0rem, 0rem, 0rem);
+        @include text($font12, $w700);
+
+        &:nth-child(2n) {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 640px) {
+    footer {
+        @include display_flex($row);
+        @include margin (0rem, 2rem, 0rem, 2rem);
+
+        .third__paragraph {
+            display: none;
+
+            &:nth-child(2n) {
+                @include display_flex ($row);
+            }
+        }
+
+
+        .nav__item {
+            &:nth-child(3) {
+                display: none;
+            }
+        }
+
+        .logo {
+            display: flex;
+            @include margin (0rem, 0rem, 0rem, 0rem);
+        }
+
+        .nav__item {
+            @include padding (0rem, 0rem, 0rem, 0rem);
+        }
+
+    }
+}
+
+
+@media (min-width: 768px) {
+    footer {
+        @include margin (0rem, 5%, 0rem, 5%);
+
+        .nav__item {
+            @include padding (0rem, 1rem, 0rem, 1rem);
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    footer {
+        @include margin (0rem, 15%, 0rem, 15%);
+    }
+}

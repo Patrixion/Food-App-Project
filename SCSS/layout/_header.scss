@@ -1,0 +1,55 @@
+header {
+    background-color: $white;
+
+    .nav {
+        @include display_flex($row);
+        @include padding (1.6rem, 1.6rem, 1.6rem, 1.6rem);
+        @include list-style($none);
+
+        .menu__text {
+            display: none;
+        }
+
+        .nav__menu {
+            height: 3rem;
+            width: 4.4rem;
+            @include nav_color ($grey);
+
+            &:hover {
+                @include nav_color ($orange);
+            }
+        }
+    }
+}
+
+@media (min-width: 640px) {
+    header {
+        .nav {
+            @include padding (3rem, 4rem, 3rem, 4rem);
+            justify-content: space-between;
+
+            .nav__text {
+                @include display_flex($row);
+                justify-content: right;
+
+                p {
+                    @include text($font12, $w700);
+                    @include padding(0rem, 4rem, 0rem, 4rem);
+                    @include color($granat);
+
+                    &:first-child {
+                        @include color($orange);
+                    }
+                }
+            }
+
+            .menu__text {
+                @include display_flex($row);
+            }
+
+            .nav__menu {
+                display: none;
+            }
+        }
+    }
+}

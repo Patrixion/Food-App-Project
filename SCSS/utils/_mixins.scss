@@ -1,0 +1,41 @@
+@mixin display_flex ($row) {
+    display: flex;
+    flex-direction: $row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin nav_color($color) {
+    fill: $color;
+}
+
+@mixin text($font-size, $font-weight) {
+    font-size: $font-size;
+    font-weight: $font-weight;
+}
+
+@mixin margin($top, $right, $bottom, $left) {
+    margin: $top $right $bottom $left;
+}
+
+@mixin padding($top, $right, $bottom, $left) {
+    padding: $top $right $bottom $left;
+}
+
+@mixin color($color) {
+    color: $color;
+}
+
+@mixin max-width($max-width) {
+    max-width: $max-width;
+}
+
+@mixin list-style($none) {
+    list-style-type: $none;
+}
+
+@mixin background {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

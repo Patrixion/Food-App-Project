@@ -1,0 +1,220 @@
+html {
+    font-size: 62.5%;
+    font-family: $main__font;
+    background-color: $light-grey;
+}
+
+.main__paragraphs {
+    @include display_flex($column);
+    @include color($grey);
+    text-align: center;
+
+
+    .first__paragraph {
+        @include text($font16, $w700);
+        @include padding (0rem, 0rem, 2.5rem, 0rem);
+    }
+
+    .third__paragraph {
+        @include margin(0.7rem, 0, 0, 0);
+        @include padding (1rem, 1rem, 1rem, 1rem);
+        @include text($font24, $w500);
+    }
+
+    .second__paragraph {
+        @include color($granat);
+        @extend .third__paragraph;
+        @include text($font36, $w700);
+        font-weight: $bold;
+    }
+}
+
+.mockup__pair {
+    @include display_flex($column);
+
+    img {
+        @include max-width(32rem);
+    }
+
+    p {
+        @include margin(0.7rem, 0, 0, 0);
+        @include padding (1rem, 1rem, 4rem, 1rem);
+        @include text($font24, $w700);
+        @include color($black);
+    }
+}
+
+.hr {
+    border: 0.1rem solid $grey3;
+}
+
+.section {
+    @extend .main__paragraphs;
+    @include margin(0, 0, 5rem, 0);
+
+    img {
+        @include max-width(32rem);
+        background-color: $light-grey;
+        @include margin(2rem, 0, 2rem, 0);
+    }
+
+    .section__list {
+        @include list-style($none);
+        @include margin(4rem, 0, 0, 0);
+        @include padding(0, 1.8rem, 0, 1.8rem);
+
+        .first__paragraph {
+            @include text($font24, $w700);
+            @include color($orange);
+        }
+    }
+}
+
+.register__section {
+    @extend .main__paragraphs;
+    @extend .buttons;
+    justify-content: space-evenly;
+    background-color: $granat;
+    @include padding(10rem, 1.8rem, 10rem, 1.8rem);
+
+    ul {
+        @include list-style($none);
+
+        .third__paragraph {
+            @include color($grey4);
+        }
+
+        .second__paragraph {
+            @include color($white);
+        }
+    }
+}
+
+@media (min-width: 640px) {
+    hr {
+        @include margin(0, 20%, 0, 20%);
+    }
+
+    .main__paragraphs {
+        @include padding(0rem, 5%, 0, 5%);
+
+        &:first-child {
+            background-image: url("/images/Background\ header.png");
+            @include background;
+            @include color($white);
+
+            .buttons {
+                @include padding(0rem, 0rem, 8rem, 0rem);
+            }
+
+            .second__paragraph {
+                @include color($white);
+                @include padding(2rem, 2rem, 2rem, 2rem);
+            }
+
+            .first__paragraph {
+                @include padding (4rem, 0rem, 4rem, 0rem);
+            }
+        }
+    }
+
+    .mockup__pair {
+        @include margin(-10rem, 0, 0, 0);
+
+        img {
+            @include max-width(42rem);
+        }
+
+        p {
+            @include margin(0.7rem, 0, 0, 0);
+            @include padding (1rem, 1rem, 4rem, 1rem);
+            @include text($font24, $w700);
+            @include color($black);
+        }
+    }
+
+    .section {
+        flex-direction: $row;
+        @include margin(0, 0, 10rem, 0);
+
+        &:nth-child(2n) {
+            flex-direction: row-reverse;
+
+            .section__list {
+                @include padding(0, 3rem, 0, 3rem);
+            }
+        }
+
+        .section__list {
+            @include padding(0, 1.8rem, 0, 1.8rem);
+        }
+
+        .second__paragraph,
+        .third__paragraph {
+            @include padding(0rem, 0rem, 0rem, 0rem);
+        }
+
+        p {
+            text-align: left;
+        }
+    }
+
+    .register__section {
+        background-image: url(/images/Background\ footer.png);
+        @include background;
+        @include padding(10rem, 10rem, 10rem, 10rem);
+
+        ul {
+            @include list-style($none);
+
+            .second__paragraph,
+            .third__paragraph {
+                @include color($white);
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .main__paragraphs {
+        @include padding(0rem, 10%, 0, 10%);
+    }
+
+    .register__section {
+        @include padding(10rem, 0, 10rem, 0);
+    }
+
+    img {
+        @include margin(2rem, 4rem, 2rem, 0);
+    }
+}
+
+@media (min-width: 1024px) {
+    .main__paragraphs {
+        @include padding(0rem, 15%, 0, 15%);
+    }
+
+    .register__section {
+        @include padding(10rem, 0, 10rem, 0);
+    }
+
+    img {
+        @include margin(2rem, 6rem, 2rem, 0);
+    }
+}
+
+@media (min-width: 1200px) {
+    .main__paragraphs {
+        @include padding(0rem, 20%, 0, 20%);
+    }
+
+    .register__section {
+        @include padding(10rem, 0, 10rem, 0);
+    }
+
+    .section__list {
+        img {
+            @include margin(2rem, 8rem, 2rem, 0);
+        }
+    }
+}
