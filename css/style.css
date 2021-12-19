@@ -178,7 +178,7 @@ html {
   }
 
   .register__section {
-    background-image: url(/images/Background\ footer.png);
+    background-image: url("/images/Background footer.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -390,7 +390,7 @@ header .nav .nav__menu:hover, footer .nav .nav__menu:hover {
     justify-content: right;
   }
   header .nav .nav__text p, footer .nav .nav__text p {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     font-weight: 700;
     padding: 0rem 4rem 0rem 4rem;
     color: #252B42;
@@ -406,6 +406,13 @@ header .nav .nav__menu:hover, footer .nav .nav__menu:hover {
   }
   header .nav .nav__menu, footer .nav .nav__menu {
     display: none;
+  }
+}
+@media (min-width: 1024px) {
+  .menu__text {
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding: 0rem 10rem 0rem 10rem;
   }
 }
 

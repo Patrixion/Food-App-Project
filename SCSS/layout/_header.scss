@@ -33,7 +33,7 @@ header {
                 justify-content: right;
 
                 p {
-                    @include text($font12, $w700);
+                    @include text($font16, $w700);
                     @include padding(0rem, 4rem, 0rem, 4rem);
                     @include color($granat);
 
@@ -52,4 +52,12 @@ header {
             }
         }
     }
+}
+
+@media (min-width: 1024px) {
+    .menu__text {
+        @include text($font16, $w700);
+        @include padding(0rem, 10rem, 0rem, 10rem);
+    }
+
 }

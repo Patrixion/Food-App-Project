@@ -99,7 +99,7 @@ html {
         @include padding(0rem, 5%, 0, 5%);
 
         &:first-child {
-            background-image: url("./images/Background\ header.png");
+            background-image: url('/images/Background\ header.png');
             @include background;
             @include color($white);
 
@@ -160,7 +160,7 @@ html {
     }
 
     .register__section {
-        background-image: url("./images/Background\ footer.png");
+        background-image: url('/images/Background\ footer.png');
         @include background;
         @include padding(10rem, 10rem, 10rem, 10rem);
 
