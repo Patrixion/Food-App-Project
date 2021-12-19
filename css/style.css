@@ -9,22 +9,18 @@
   font-family: "Montserrat";
   src: url("fonts/Montserrat_Regular.ttf") format("ttf");
 }
-
 @font-face {
   font-family: "Montserrat2";
   src: url("fonts/Montserrat_Bold.otf") format("opentype");
 }
-
 @font-face {
   font-family: "Montserrat3";
   src: url("fonts/Montserrat_Semibold.ttf") format("ttf");
 }
-
 @font-face {
   font-family: "Roboto";
   src: url("fonts/Roboto_Regular.ttf") format("ttf");
 }
-
 /*Imports from utils */
 /*  Colors  */
 /* Font size */
@@ -39,10 +35,7 @@ html {
   background-color: #FAFAFA;
 }
 
-.main__paragraphs,
-footer,
-.register__section,
-.section {
+.main__paragraphs, footer, .register__section, .section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,34 +43,18 @@ footer,
   color: #737373;
   text-align: center;
 }
-
-.main__paragraphs .first__paragraph,
-footer .first__paragraph,
-.register__section .first__paragraph,
-.section .first__paragraph {
+.main__paragraphs .first__paragraph, footer .first__paragraph, .register__section .first__paragraph, .section .first__paragraph {
   font-size: 1.6rem;
   font-weight: 700;
   padding: 0rem 0rem 2.5rem 0rem;
 }
-
-.main__paragraphs .third__paragraph,
-footer .third__paragraph,
-.register__section .third__paragraph,
-.section .third__paragraph,
-.main__paragraphs .second__paragraph,
-footer .second__paragraph,
-.register__section .second__paragraph,
-.section .second__paragraph {
+.main__paragraphs .third__paragraph, footer .third__paragraph, .register__section .third__paragraph, .section .third__paragraph, .main__paragraphs .second__paragraph, footer .second__paragraph, .register__section .second__paragraph, .section .second__paragraph {
   margin: 0.7rem 0 0 0;
   padding: 1rem 1rem 1rem 1rem;
   font-size: 2.4rem;
   font-weight: 500;
 }
-
-.main__paragraphs .second__paragraph,
-footer .second__paragraph,
-.register__section .second__paragraph,
-.section .second__paragraph {
+.main__paragraphs .second__paragraph, footer .second__paragraph, .register__section .second__paragraph, .section .second__paragraph {
   color: #252B42;
   font-size: 3.6rem;
   font-weight: 700;
@@ -90,11 +67,9 @@ footer .second__paragraph,
   align-items: center;
   justify-content: space-between;
 }
-
 .mockup__pair img {
   max-width: 32rem;
 }
-
 .mockup__pair p {
   margin: 0.7rem 0 0 0;
   padding: 1rem 1rem 4rem 1rem;
@@ -110,19 +85,16 @@ footer .second__paragraph,
 .section {
   margin: 0 0 5rem 0;
 }
-
 .section img {
   max-width: 32rem;
   background-color: #FAFAFA;
   margin: 2rem 0 2rem 0;
 }
-
 .section .section__list {
   list-style-type: none;
   margin: 4rem 0 0 0;
   padding: 0 1.8rem 0 1.8rem;
 }
-
 .section .section__list .first__paragraph {
   font-size: 2.4rem;
   font-weight: 700;
@@ -134,16 +106,12 @@ footer .second__paragraph,
   background-color: #252B42;
   padding: 10rem 1.8rem 10rem 1.8rem;
 }
-
 .register__section ul {
   list-style-type: none;
 }
-
-.register__section ul .third__paragraph,
-.register__section ul .second__paragraph {
+.register__section ul .third__paragraph, .register__section ul .second__paragraph {
   color: #BDBDBD;
 }
-
 .register__section ul .second__paragraph {
   color: #fff;
 }
@@ -153,58 +121,33 @@ footer .second__paragraph,
     margin: 0 20% 0 20%;
   }
 
-  .main__paragraphs,
-  footer,
-  .section,
-  .register__section {
+  .main__paragraphs, footer, .section, .register__section {
     padding: 0rem 5% 0 5%;
   }
-
-  .main__paragraphs:first-child,
-  footer:first-child,
-  .section:first-child,
-  .register__section:first-child {
-    background-image: url("/images/Background-header.png");
+  .main__paragraphs:first-child, footer:first-child, .section:first-child, .register__section:first-child {
+    background-image: url("./../images/Background-header.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     color: #fff;
   }
-
-  .main__paragraphs:first-child .buttons,
-  footer:first-child .buttons,
-  .section:first-child .buttons,
-  .register__section:first-child .buttons,
-  .main__paragraphs:first-child .register__section,
-  footer:first-child .register__section,
-  .section:first-child .register__section,
-  .register__section:first-child .register__section {
+  .main__paragraphs:first-child .buttons, footer:first-child .buttons, .section:first-child .buttons, .register__section:first-child .buttons, .main__paragraphs:first-child .register__section, footer:first-child .register__section, .section:first-child .register__section, .register__section:first-child .register__section {
     padding: 0rem 0rem 8rem 0rem;
   }
-
-  .main__paragraphs:first-child .second__paragraph,
-  footer:first-child .second__paragraph,
-  .section:first-child .second__paragraph,
-  .register__section:first-child .second__paragraph {
+  .main__paragraphs:first-child .second__paragraph, footer:first-child .second__paragraph, .section:first-child .second__paragraph, .register__section:first-child .second__paragraph {
     color: #fff;
     padding: 2rem 2rem 2rem 2rem;
   }
-
-  .main__paragraphs:first-child .first__paragraph,
-  footer:first-child .first__paragraph,
-  .section:first-child .first__paragraph,
-  .register__section:first-child .first__paragraph {
+  .main__paragraphs:first-child .first__paragraph, footer:first-child .first__paragraph, .section:first-child .first__paragraph, .register__section:first-child .first__paragraph {
     padding: 4rem 0rem 4rem 0rem;
   }
 
   .mockup__pair {
     margin: -10rem 0 0 0;
   }
-
   .mockup__pair img {
     max-width: 42rem;
   }
-
   .mockup__pair p {
     margin: 0.7rem 0 0 0;
     padding: 1rem 1rem 4rem 1rem;
@@ -217,52 +160,40 @@ footer .second__paragraph,
     flex-direction: row;
     margin: 0 0 10rem 0;
   }
-
   .section:nth-child(2n) {
     flex-direction: row-reverse;
   }
-
   .section:nth-child(2n) .section__list {
     padding: 0 3rem 0 3rem;
   }
-
   .section .section__list {
     padding: 0 1.8rem 0 1.8rem;
   }
-
   .section .second__paragraph,
-  .section .third__paragraph {
+.section .third__paragraph {
     padding: 0rem 0rem 0rem 0rem;
   }
-
   .section p {
     text-align: left;
   }
 
   .register__section {
-    background-image: url("/images/Background-footer.png");
+    background-image: url("./../images/Background-footer.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     padding: 10rem 10rem 10rem 10rem;
   }
-
   .register__section ul {
     list-style-type: none;
   }
-
   .register__section ul .second__paragraph,
-  .register__section ul .third__paragraph {
+.register__section ul .third__paragraph {
     color: #fff;
   }
 }
-
 @media (min-width: 768px) {
-
-  .main__paragraphs,
-  footer,
-  .section,
-  .register__section {
+  .main__paragraphs, footer, .section, .register__section {
     padding: 0rem 10% 0 10%;
   }
 
@@ -274,13 +205,8 @@ footer .second__paragraph,
     margin: 2rem 4rem 2rem 0;
   }
 }
-
 @media (min-width: 1024px) {
-
-  .main__paragraphs,
-  footer,
-  .section,
-  .register__section {
+  .main__paragraphs, footer, .section, .register__section {
     padding: 0rem 15% 0 15%;
   }
 
@@ -292,13 +218,8 @@ footer .second__paragraph,
     margin: 2rem 6rem 2rem 0;
   }
 }
-
 @media (min-width: 1200px) {
-
-  .main__paragraphs,
-  footer,
-  .section,
-  .register__section {
+  .main__paragraphs, footer, .section, .register__section {
     padding: 0rem 20% 0 20%;
   }
 
@@ -310,18 +231,14 @@ footer .second__paragraph,
     margin: 2rem 8rem 2rem 0;
   }
 }
-
 /*Imports from components */
-.buttons,
-.register__section {
+.buttons, .register__section {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
 }
-
-.buttons button,
-.register__section button {
+.buttons button, .register__section button {
   color: #fff;
   font-size: 2rem;
   font-weight: 700;
@@ -331,9 +248,7 @@ footer .second__paragraph,
   background-color: #FA4A0c;
   border-radius: 2.6rem;
 }
-
-.buttons button:nth-child(2n),
-.register__section button:nth-child(2n) {
+.buttons button:nth-child(2n), .register__section button:nth-child(2n) {
   color: #FA4A0c;
   border: #FA4A0c solid 0.1rem;
   background-color: transparent;
@@ -345,7 +260,6 @@ footer .second__paragraph,
   align-items: center;
   justify-content: space-between;
 }
-
 .buttons2 button {
   padding: 1.5rem 2rem 1.5rem 2rem;
   font-size: 1.6rem;
@@ -353,31 +267,25 @@ footer .second__paragraph,
   border-radius: 1.6rem;
   margin: 5rem 0.6rem 0 0.6rem;
 }
-
 .buttons2:nth-child(2n) {
   background-color: #0000;
 }
 
 @media (min-width: 640px) {
-
-  .buttons button:nth-child(2n),
-  .register__section button:nth-child(2n) {
+  .buttons button:nth-child(2n), .register__section button:nth-child(2n) {
     color: #fff;
     border: #fff solid 0.1rem;
   }
 }
-
 /*Imports from layout */
 footer {
   flex-direction: column;
   padding: 5rem 0rem 5rem 0rem;
 }
-
 footer .logo {
   display: none;
   width: 21rem;
 }
-
 footer .logo__container {
   display: flex;
   flex-direction: row;
@@ -385,36 +293,23 @@ footer .logo__container {
   justify-content: space-between;
   list-style-type: none;
 }
-
 footer .logo__container:nth-child(3n) {
   display: none;
 }
-
 footer .logo__container .nav__menu {
   height: 3rem;
   width: 4.4rem;
   fill: #FA4A0c;
 }
-
 footer .logo__container .nav__menu:hover {
   fill: #737373;
 }
-
-footer .third__paragraph,
-footer .main__paragraphs .second__paragraph,
-.main__paragraphs footer .second__paragraph,
-footer .section .second__paragraph,
-.section footer .second__paragraph,
-footer .register__section .second__paragraph,
-.register__section footer .second__paragraph,
-footer .second__paragraph {
+footer .third__paragraph, footer .main__paragraphs .second__paragraph, .main__paragraphs footer .second__paragraph, footer .section .second__paragraph, .section footer .second__paragraph, footer .register__section .second__paragraph, .register__section footer .second__paragraph, footer .second__paragraph {
   padding: 0rem 0rem 0rem 0rem;
   font-size: 1.2rem;
   font-weight: 700;
 }
-
-footer .third__paragraph:nth-child(2n),
-footer .second__paragraph:nth-child(2n) {
+footer .third__paragraph:nth-child(2n), footer .second__paragraph:nth-child(2n) {
   display: none;
 }
 
@@ -426,63 +321,43 @@ footer .second__paragraph:nth-child(2n) {
     justify-content: space-between;
     margin: 0rem 2rem 0rem 2rem;
   }
-
-  footer .third__paragraph,
-  footer .main__paragraphs .second__paragraph,
-  .main__paragraphs footer .second__paragraph,
-  footer .section .second__paragraph,
-  .section footer .second__paragraph,
-  footer .register__section .second__paragraph,
-  .register__section footer .second__paragraph,
-  footer .second__paragraph {
+  footer .third__paragraph, footer .main__paragraphs .second__paragraph, .main__paragraphs footer .second__paragraph, footer .section .second__paragraph, .section footer .second__paragraph, footer .register__section .second__paragraph, .register__section footer .second__paragraph, footer .second__paragraph {
     display: none;
   }
-
-  footer .third__paragraph:nth-child(2n),
-  footer .second__paragraph:nth-child(2n) {
+  footer .third__paragraph:nth-child(2n), footer .second__paragraph:nth-child(2n) {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
   }
-
   footer .nav__item:nth-child(3) {
     display: none;
   }
-
   footer .logo {
     display: flex;
     margin: 0rem 0rem 0rem 0rem;
   }
-
   footer .nav__item {
     padding: 0rem 0rem 0rem 0rem;
   }
 }
-
 @media (min-width: 768px) {
   footer {
     margin: 0rem 5% 0rem 5%;
   }
-
   footer .nav__item {
     padding: 0rem 1rem 0rem 1rem;
   }
 }
-
 @media (min-width: 1024px) {
   footer {
     margin: 0rem 15% 0rem 15%;
   }
 }
-
-header,
-footer {
+header, footer {
   background-color: #fff;
 }
-
-header .nav,
-footer .nav {
+header .nav, footer .nav {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -490,68 +365,49 @@ footer .nav {
   padding: 1.6rem 1.6rem 1.6rem 1.6rem;
   list-style-type: none;
 }
-
-header .nav .menu__text,
-footer .nav .menu__text {
+header .nav .menu__text, footer .nav .menu__text {
   display: none;
 }
-
-header .nav .nav__menu,
-footer .nav .nav__menu {
+header .nav .nav__menu, footer .nav .nav__menu {
   height: 3rem;
   width: 4.4rem;
   fill: #737373;
 }
-
-header .nav .nav__menu:hover,
-footer .nav .nav__menu:hover {
+header .nav .nav__menu:hover, footer .nav .nav__menu:hover {
   fill: #FA4A0c;
 }
 
 @media (min-width: 640px) {
-
-  header .nav,
-  footer .nav {
+  header .nav, footer .nav {
     padding: 3rem 4rem 3rem 4rem;
     justify-content: space-between;
   }
-
-  header .nav .nav__text,
-  footer .nav .nav__text {
+  header .nav .nav__text, footer .nav .nav__text {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     justify-content: right;
   }
-
-  header .nav .nav__text p,
-  footer .nav .nav__text p {
+  header .nav .nav__text p, footer .nav .nav__text p {
     font-size: 1.6rem;
     font-weight: 700;
     padding: 0rem 4rem 0rem 4rem;
     color: #252B42;
   }
-
-  header .nav .nav__text p:first-child,
-  footer .nav .nav__text p:first-child {
+  header .nav .nav__text p:first-child, footer .nav .nav__text p:first-child {
     color: #FA4A0c;
   }
-
-  header .nav .menu__text,
-  footer .nav .menu__text {
+  header .nav .menu__text, footer .nav .menu__text {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
   }
-
-  header .nav .nav__menu,
-  footer .nav .nav__menu {
+  header .nav .nav__menu, footer .nav .nav__menu {
     display: none;
   }
 }
-
 @media (min-width: 1024px) {
   .menu__text {
     font-size: 1.6rem;
