@@ -414,6 +414,10 @@ header .nav .nav__menu:hover, footer .nav .nav__menu:hover {
     font-weight: 700;
     padding: 0rem 10rem 0rem 10rem;
   }
+
+  .logo {
+    width: 15rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
