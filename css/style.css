@@ -7,19 +7,19 @@
 
 @font-face {
   font-family: "Montserrat";
-  src: url("./../../fonts/Montserrat_Regular.ttf") format("ttf");
+  src: url("./../fonts/Montserrat_Regular.ttf") format("ttf");
 }
 @font-face {
   font-family: "Montserrat2";
-  src: url("./../../fonts/Montserrat_Bold.otf") format("opentype");
+  src: url("./../fonts/Montserrat_Bold.otf") format("opentype");
 }
 @font-face {
   font-family: "Montserrat3";
-  src: url("./../../fonts/Montserrat_Semibold.ttf") format("ttf");
+  src: url("./../fonts/Montserrat_Semibold.ttf") format("ttf");
 }
 @font-face {
   font-family: "Roboto";
-  src: url("./../../fonts/Roboto_Regular.ttf") format("ttf");
+  src: url("./../fonts/Roboto_Regular.ttf") format("ttf");
 }
 /*Imports from utils */
 /*  Colors  */

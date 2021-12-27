@@ -5,20 +5,20 @@ $secondary__font: 'Roboto';
 
 @font-face {
     font-family: $main__font;
-    src: url("./../../fonts/Montserrat_Regular.ttf") format('ttf');
+    src: url("./../fonts/Montserrat_Regular.ttf") format('ttf');
 }
 
 @font-face {
     font-family: $main__bold;
-    src: url('./../../fonts/Montserrat_Bold.otf') format('opentype');
+    src: url('./../fonts/Montserrat_Bold.otf') format('opentype');
 }
 
 @font-face {
     font-family: $main__semibold;
-    src: url("./../../fonts/Montserrat_Semibold.ttf") format('ttf');
+    src: url("./../fonts/Montserrat_Semibold.ttf") format('ttf');
 }
 
 @font-face {
     font-family: $secondary__font;
-    src: url("./../../fonts/Roboto_Regular.ttf") format('ttf');
+    src: url("./../fonts/Roboto_Regular.ttf") format('ttf');
 }
