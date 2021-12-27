@@ -1,47 +1,39 @@
-.buttons {
-    @include display_flex($column);
+button {
+    @include color($white);
+    @include text($font20, $w700);
+    @include padding (1.6rem, 5.85rem, 1.6rem, 5.85rem);
+    @include margin(1.7rem, 0, 0, 0);
+    border: none;
+    background-color: $orange;
+    border-radius: 2.6rem;
+    display: inline-block;
 
-    button {
-        @include color($white);
-        @include text($font20, $w700);
-        @include padding (1.6rem, 5.85rem, 1.6rem, 5.85rem);
-        @include margin(1.7rem, 0, 0, 0);
-        border: none;
-        background-color: $orange;
-        border-radius: 2.6rem;
-
-        &:nth-child(2n) {
-            @include color($orange);
-            border: $orange solid 0.1rem;
-            background-color: transparent;
-        }
+    &:nth-child(2n) {
+        @include color($orange);
+        border: $orange solid 0.1rem;
+        background-color: transparent;
     }
 }
 
-.buttons2 {
-    @include display_flex($row);
 
-    button {
-        @include padding (1.5rem, 2rem, 1.5rem, 2rem);
-        @include text($font16, $w700);
-        border-radius: 1.6rem;
-        @include margin(5rem, 0.6rem, 0, 0.6rem);
-    }
+button {
+    @include padding (1.5rem, 2rem, 1.5rem, 2rem);
+    @include text($font16, $w700);
+    border-radius: 1.6rem;
+    @include margin(5rem, 0.6rem, 0, 0.6rem);
 
     &:nth-child(2n) {
+        display: inline-block;
         background-color: #0000;
     }
 }
 
+
 @media (min-width: 640px) {
-    .buttons {
-        button {
-            &:nth-child(2n) {
-                @include color($white);
-                border: $white solid 0.1rem;
-            }
+    button {
+        &:nth-child(2n) {
+            @include color($white);
+            border: $white solid 0.1rem;
         }
     }
-
-
 }
