@@ -4,217 +4,286 @@ html {
     background-color: $light-grey;
 }
 
-.main__paragraphs {
-    @include display_flex($column);
-    @include color($grey);
+main {
+
     text-align: center;
 
-
-    .first__paragraph {
-        @include text($font16, $w700);
-        @include padding (0rem, 0rem, 2.5rem, 0rem);
-    }
-
-    .third__paragraph {
-        @include margin(0.7rem, 0, 0, 0);
-        @include padding (1rem, 1rem, 1rem, 1rem);
-        @include text($font24, $w500);
-    }
-
-    .second__paragraph {
-        @include color($granat);
-        @extend .third__paragraph;
-        @include text($font36, $w700);
-        font-weight: $bold;
-    }
-}
-
-.mockup__pair {
-    @include display_flex($column);
-
     img {
-        @include max-width(32rem);
+        max-width: 320px;
+        margin: 6rem 0;
     }
 
     p {
-        @include margin(0.7rem, 0, 0, 0);
-        @include padding (1rem, 1rem, 4rem, 1rem);
-        @include text($font24, $w700);
-        @include color($black);
-    }
-}
-
-.hr {
-    border: 0.1rem solid $grey3;
-}
-
-.section {
-    @extend .main__paragraphs;
-    @include margin(0, 0, 5rem, 0);
-
-    img {
-        @include max-width(32rem);
-        background-color: $light-grey;
-        @include margin(2rem, 0, 2rem, 0);
+        font-size: $font24;
+        color: $black;
+        font-weight: 900;
     }
 
-    .section__list {
-        @include list-style($none);
-        @include margin(4rem, 0, 0, 0);
-        @include padding(0, 1.8rem, 0, 1.8rem);
-
-        .first__paragraph {
-            @include text($font24, $w700);
-            @include color($orange);
-        }
+    hr {
+        border: .1rem solid $grey3;
+        min-width: 80%;
+        margin: 5rem 0;
     }
-}
 
-.register__section {
-    @extend .main__paragraphs;
-    @extend .buttons;
-    justify-content: space-evenly;
-    background-color: $granat;
-    @include padding(10rem, 1.8rem, 10rem, 1.8rem);
-
-    ul {
-        @include list-style($none);
-
-        .third__paragraph {
-            @include color($grey4);
+    .main__paragraphs {
+        button {
+            flex-direction: column;
+            margin-bottom: 1.6rem;
         }
 
-        .second__paragraph {
-            @include color($white);
+        p {
+            font-size: $font16;
+            color: $grey;
+            margin: 0 2.6rem;
+
+            &:first-child {
+                margin-top: 5rem;
+            }
+
+            &:nth-child(2) {
+                font-family: $poppins;
+                font-weight: 500;
+
+                padding: 1rem;
+                font-size: $font36;
+
+                color: $granat;
+                margin: .7rem 0;
+            }
+
+            &:nth-child(3) {
+                margin: 3rem 2.5rem;
+                padding: 1rem;
+                font-size: $font24;
+            }
+        }
+    }
+
+    .content {
+        .section {
+            @extend .main__paragraphs;
+            padding-bottom: 4rem;
+
+            img {
+                margin: 0;
+            }
+
+            p {
+                color: $grey;
+
+
+                &:first-child {
+                    margin-top: 0rem;
+                    color: $orange;
+                    font-size: $font24;
+                    background-image: none;
+                }
+
+                &:nth-child(2) {
+                    margin: 3rem 0;
+                    padding: 0 2.9rem;
+                    font-family: $main__semibold;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+
+    .register__section {
+        background-color: $blue;
+        padding: 11rem 2.4rem;
+        max-width: 100%;
+
+        p {
+            color: $white;
+            font-size: $font40;
+            padding: 1rem 0;
+
+            &:nth-child(2) {
+                color: $grey3;
+                font-size: $font24;
+                padding-bottom: 5rem;
+            }
+
+            &:nth-child(3) {
+                display: none;
+
+            }
+        }
+
+        button {
+            margin: .2rem;
+            border-radius: 1rem;
+            padding: 1.6rem 2rem;
+            font-size: $font16;
+
+            span {
+                &:nth-child(2) {
+                    display: none;
+                }
+            }
         }
     }
 }
 
 @media (min-width: 640px) {
-    hr {
-        @include margin(0, 20%, 0, 20%);
-    }
+    main {
+        .main__paragraphs {
+            padding: 5rem 0;
 
-    .main__paragraphs {
-        @include padding(0rem, 5%, 0, 5%);
+            button {
 
-        &:first-child {
-            background-image: url("./../../images/Background-header.png");
-            @include background;
-            @include color($white);
-
-            .buttons {
-                @include padding(0rem, 0rem, 8rem, 0rem);
+                &:nth-child(2n-1) {
+                    @include color;
+                }
             }
 
-            .second__paragraph {
-                @include color($white);
-                @include padding(2rem, 2rem, 2rem, 2rem);
+            p {
+                color: $white;
+
+                &:first-child {
+                    margin: 0;
+                }
+
+                &:nth-child(2) {
+                    color: $white;
+                }
+
+                &:nth-child(3) {
+                    color: $white;
+                }
             }
 
-            .first__paragraph {
-                @include padding (4rem, 0rem, 4rem, 0rem);
+            &:first-child {
+                background-image: url("./../images/Background-header.png");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
             }
-        }
-    }
 
-    .mockup__pair {
-        @include margin(-10rem, 0, 0, 0);
-
-        img {
-            @include max-width(42rem);
-        }
-
-        p {
-            @include margin(0.7rem, 0, 0, 0);
-            @include padding (1rem, 1rem, 4rem, 1rem);
-            @include text($font24, $w700);
-            @include color($black);
-        }
-    }
-
-    .section {
-        flex-direction: $row;
-        @include margin(0, 0, 10rem, 0);
-
-        &:nth-child(2n) {
-            flex-direction: row-reverse;
-
-            .section__list {
-                @include padding(0, 3rem, 0, 3rem);
+            &:nth-child(5) {
+                padding: 0rem 0;
             }
         }
 
-        .section__list {
-            @include padding(0, 1.8rem, 0, 1.8rem);
+        .content {
+            .section {
+                &:first-child {
+                    background-image: none;
+                    padding: 0;
+                }
+
+                p {
+                    &:first-child {
+                        padding-top: 0rem;
+
+                    }
+
+                    &:nth-child(2) {
+                        color: $granat;
+                    }
+
+                    &:nth-child(3) {
+                        color: $grey;
+                    }
+                }
+            }
         }
 
-        .second__paragraph,
-        .third__paragraph {
-            @include padding(0rem, 0rem, 0rem, 0rem);
-        }
+        .register__section {
+            background-image: url("./../images/Background-footer.png");
+            background-position: center;
+            background-size: cover;
 
-        p {
-            text-align: left;
-        }
-    }
+            p {
+                &:nth-child(2) {
+                    display: none;
+                }
 
-    .register__section {
-        background-image: url("./../../images/Background-footer.png");
-        @include background;
-        @include padding(10rem, 10rem, 10rem, 10rem);
+                &:nth-child(3) {
+                    display: block;
+                    color: $grey3;
+                    font-size: $font20;
+                }
+            }
 
-        ul {
-            @include list-style($none);
+            button {
+                padding: 2rem 3rem;
 
-            .second__paragraph,
-            .third__paragraph {
-                @include color($white);
+                &:nth-child(2n-1) {
+                    @include color;
+                }
+
+                span {
+                    display: none;
+
+                    &:nth-child(2) {
+                        display: block;
+                    }
+                }
             }
         }
     }
 }
 
 @media (min-width: 768px) {
-    .main__paragraphs {
-        @include padding(0rem, 10%, 0, 10%);
-    }
+    main {
+        @include justify(space-between);
+        align-items: center;
+        justify-content: space-evenly;
 
-    .register__section {
-        @include padding(10rem, 0, 10rem, 0);
-    }
 
-    img {
-        @include margin(2rem, 4rem, 2rem, 0);
+        img {
+            max-width: 480px;
+            margin: -8rem 0 0 0;
+        }
+
+        .content {
+            flex-direction: row;
+            text-align: left;
+            padding: 0 10%;
+
+            .section {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-evenly;
+                padding-bottom: 2rem;
+
+                .section__paragraphs {
+                    &:nth-child(2n-1) {
+                        margin-left: 2rem;
+                    }
+
+                    p {
+                        padding: 1rem 0;
+                        margin: 0;
+                    }
+                }
+
+                &:nth-child(2n+1) {
+                    flex-direction: row-reverse;
+                }
+            }
+        }
     }
 }
 
 @media (min-width: 1024px) {
-    .main__paragraphs {
-        @include padding(0rem, 15%, 0, 15%);
-    }
+    main {
 
-    .register__section {
-        @include padding(10rem, 0, 10rem, 0);
-    }
+        button {
+            flex-direction: column;
+            margin: 1.7rem;
+        }
 
-    img {
-        @include margin(2rem, 6rem, 2rem, 0);
-    }
-}
+        .main__paragraphs {
+            padding: 10rem 0;
 
-@media (min-width: 1200px) {
-    .main__paragraphs {
-        @include padding(0rem, 20%, 0, 20%);
-    }
-
-    .register__section {
-        @include padding(10rem, 0, 10rem, 0);
-    }
-
-    .section__list {
-        img {
-            @include margin(2rem, 8rem, 2rem, 0);
+            .content {
+                flex-direction: row;
+                justify-content: space-between;
+            }
         }
     }
 }

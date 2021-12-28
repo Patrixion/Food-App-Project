@@ -1,22 +1,27 @@
 header {
     background-color: $white;
+    padding: 1.6rem;
 
-    .nav {
-        @include display_flex($row);
-        @include padding (1.6rem, 1.6rem, 1.6rem, 1.6rem);
-        @include list-style($none);
+    ul {
+        @include flex;
+        @include flex-direction($row);
+        @include align($center);
+        @include justify($space-between);
+        list-style-type: none;
 
-        .menu__text {
-            display: none;
-        }
+        .nav__text {
 
-        .nav__menu {
-            height: 3rem;
-            width: 4.4rem;
-            @include nav_color ($grey);
+            li {
+                display: none;
+            }
 
-            &:hover {
-                @include nav_color ($orange);
+            svg {
+                height: 2.5rem;
+                width: 2.5rem;
+
+                &:hover {
+                    fill: $orange;
+                }
             }
         }
     }
@@ -24,43 +29,38 @@ header {
 
 @media (min-width: 640px) {
     header {
-        .nav {
-            @include padding (3rem, 4rem, 3rem, 4rem);
-            justify-content: space-between;
-
+        ul {
             .nav__text {
-                @include display_flex($row);
-                justify-content: right;
-
-                p {
-                    @include text($font16, $w700);
-                    @include padding(0rem, 4rem, 0rem, 4rem);
-                    @include color($granat);
+                li {
+                    font-size: $font16;
+                    display: flex;
+                    margin: 2rem;
+                    color: $granat;
+                    font-weight: $w700;
 
                     &:first-child {
-                        @include color($orange);
+                        color: $orange;
                     }
                 }
-            }
 
-            .menu__text {
-                @include display_flex($row);
-            }
-
-            .nav__menu {
-                display: none;
+                svg {
+                    display: none;
+                }
             }
         }
     }
 }
 
 @media (min-width: 1024px) {
-    .menu__text {
-        @include text($font16, $w700);
-        @include padding(0rem, 10rem, 0rem, 10rem);
-    }
+    header {
+        padding: 1.6rem 7rem;
 
-    .logo {
-        width: 15rem;
+        ul {
+            .nav__text {
+                li {
+                    margin: 2rem 6rem;
+                }
+            }
+        }
     }
 }

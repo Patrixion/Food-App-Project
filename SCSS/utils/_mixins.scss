@@ -1,8 +1,17 @@
-@mixin display_flex ($row) {
+@mixin flex {
     display: flex;
+}
+
+@mixin flex-direction($row) {
     flex-direction: $row;
-    align-items: center;
-    justify-content: space-between;
+}
+
+@mixin align($align) {
+    align-items: $align;
+}
+
+@mixin justify($justify) {
+    justify-content: $justify;
 }
 
 @mixin nav_color($color) {
@@ -22,8 +31,9 @@
     padding: $top $right $bottom $left;
 }
 
-@mixin color($color) {
-    color: $color;
+@mixin color {
+    color: $white;
+    border: $white 1px solid;
 }
 
 @mixin max-width($max-width) {
