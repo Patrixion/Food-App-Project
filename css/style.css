@@ -99,7 +99,6 @@ main .content .section p:first-child {
 main .content .section p:nth-child(2) {
   margin: 3rem 0;
   padding: 0 2.9rem;
-  font-family: "Montserrat3";
   font-weight: 700;
 }
 main .register__section {
